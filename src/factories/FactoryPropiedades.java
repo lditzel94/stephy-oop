@@ -2,16 +2,15 @@ package factories;
 
 import barrios.*;
 
-public class Factory {
-    private static Factory instancia = new Factory();
+public class FactoryPropiedades {
+    private static FactoryPropiedades instancia = new FactoryPropiedades();
 
-    private Factory() {
+    private FactoryPropiedades() {
     }
 
-    public static Factory getInstancia() {
+    public static FactoryPropiedades getInstancia() {
         return instancia;
     }
-
 
     public Propiedad crearPropiedad( String tipo ) {
         switch ( tipo ) {
